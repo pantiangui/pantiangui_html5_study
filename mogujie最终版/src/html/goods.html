@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>商品详情页</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/goods.css"/>
+	</head>
+	<body>
+		<div id="box">
+				
+				
+			
+			<!--侧边栏_______________________________________________-->
+			<div id="sidebar">
+				<div class="sidebar_box">
+					<!--头像-->
+					<div class="avatar"></div>
+					<!--购物车-->
+					<div class="cart"><a>
+						<i class="icon"></i>
+						<div class="txt">购物车</div>
+						<div class="num"></div>
+					</a></div>
+					<!--优惠券-->
+					<div class="coupon"><a href="#">
+						<i class="icon"></i>
+						<div class="txt">优惠券</div>
+						<div class="num"></div>
+					</a></div>
+					<!--钱包-->
+					<div class="wallet"><a href="#">
+						<i class="icon"></i>
+						<div class="txt">钱包</div>
+					</a></div>
+					<!--足迹-->
+					<div class="brow"><a href="">
+						<i class="icon"></i>
+						<div class="txt">足迹</div>
+					</a></div>
+					<!--二维码-->
+					<div class="qrcode"><a href="">
+						<i></i>
+					</a></div>
+					<!--置顶-->
+					<div class="totop"><a href="">
+						<i></i>
+					</a></div>
+				</div>
+			</div>
+			
+			
+			
+			<!--顶部栏_______________________________________________-->
+			<div id="header">
+				<div class="container">
+					<a href="../index.html" title="回到首页"><i></i>蘑菇街首页</a>
+					<ul>
+						<!--登录-->
+						<li class="level"><a href="../login.html" id="header_login">登录</a>
+							<ol id="header_login_ol"></ol>
+						</li><i class="xian"></i>
+						<!--消息-->
+						<li id="header_news"></li><i class="header_news"></i>
+						<!--我的收藏-->
+						<li class="level" id="header_collect"></li><i class="header_collect"></i>
+						<li><a href="#"><i class="dingdans"></i>我的订单</a></li><i class="xian"></i>
+						<!--购物车-->
+						<li class="cart"><a href="#"><i class="cartico"></i>购物车</a>
+							<div id="cart">
+								<div class="cart_list">
+									<div class="cart_item1">
+										<a class="cart_item_img"><img src="../img/show_list/show_list01.jpg"/></a>
+										<div>
+											<p class="cart_item_title">韩版健身服五件套夏宽松大码运动服速干时尚拼接健身休闲服运动套装女秋</p>
+											<a class="price">￥159.00</a>
+											<a class="color">颜色:彩色底黑色</a>
+											<a class="size">尺码:37</a>
+											<a class="del">删除</a>
+										</div>
+									</div>
+								</div>
+								<div class="cart_look"><a>查看购物车</a></div>
+							</div>
+						</li><i class="xian"></i>
+						<!--客户服务-->
+						<li class="level"><a href="#">客户服务<i class="arrow"></i></a>
+							<ol>
+								<li>消费者服务</li>
+								<li>商家服务</li>
+								<li>规则中心</li>
+							</ol>
+						</li><i class="xian"></i>
+						<!--商家后台-->
+						<li class="level"><a href="#"style="padding-left: 45px;"><i class="shang_q"></i>商家后台 <i class="arrow"></i></a>
+							<ol>
+								<li>管理后台</li>
+								<li>商家社区</li>
+								<li>商家培训</li>
+								<li>市场入住</li>
+							</ol>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+			
+			<!--搜索栏_______________________________________________-->
+			<div id="goods_header">
+				<div class="container">
+					<div class="user_info_box">
+						<div class="user_img"><a><img src="../img/user_img/user_7.jpg"/></a></div>
+						<div class="user_info">
+							<p class="user_info_title">蘑菇街</p>
+							<p class="user_info_xing">
+								<i></i>
+								<i></i>
+								<i></i>
+							</p>
+							<p class="user_info_depict">
+								<span>描述<b>10.00</b></span>
+								<span>质量<b>10.00</b></span>
+								<span>服务<b>10.00</b></span>
+							</p>
+						</div>
+						<div class="user_shop">
+							<div style="padding: 0 10px;">收藏店铺</div>
+							<div class="siliao"></div>
+						</div>
+					</div>
+					<div class="centre_so">
+						<!--全站搜-->
+						<div class="stand_so">
+							<input type="text" name="cantre_inp" id="cantre_inp" value="" placeholder="口红"/>
+							<input type="button" name="station_so" id="station_so" value="搜全站" />
+						</div>
+						<div class="store_so">
+							<input type="button" name="shop_so" id="shop_so" value="搜本店" />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			<!--图片-->
+			<div class="banner">
+				<img src="../img/show_list/goods_banner.jpg"/>
+			</div>
+			<!--导航-->
+			<div class="nav">
+				<div class="container">
+					<ul>
+						<li><a href="../index.html">首页</a></li><span></span>
+						<li class="all_goods"><a href="" style="padding-right: 25px;">全部商品<i></i></a>
+							<ol>
+								<li><a href="">时尚套装</a></li>
+								<li><a href="">上装</a></li>
+								<li><a href="">下装</a></li>
+								<li><a href="">连衣裙</a></li>
+								<li><a href="">外套</a></li>
+								<li><a href="">棉衣/棉服</a></li>
+							</ol>
+						</li><span></span>
+						<li><a href="">上衣</a></li>
+					</ul>
+				</div>
+			</div>
+				
+			<!--中间内容_____________________________________________-->
+			<div id="main">	
+				<!--主内容-->
+				<div class="container">
+					
+					
+					
+					<!--商品信息-->
+					<div id="goods_info">
+						
+						<!--左边图片展示-->
+						<div class="imgdet wrap">
+							<div class="imgpart">
+								<!-- 图片展示 -->
+					            <div class="pic">
+					                <img src="../img/goods_img/101000100.jpg" alt="">
+					                <!-- 镜片 -->
+					                <div class="magnify"></div>
+					            </div>
+					            <div class="bigpic">
+					            	<img src="../img/goods_img/101000100.jpg" alt="">
+					            </div>
+							</div>
+							<div class="imglist">
+								<ul>
+									<!--<li class="active"><img src="../img/goods_colorimg/10100010001.jpg"/><span></span></li>
+									<li><img src="../img/goods_img/101000100.jpg"/><span></span></li>
+									<li><img src="../img/goods_colorimg/10100030001.jpg"/><span></span></li>
+									<li><img src="../img/goods_colorimg/10100040001.jpg"/><span></span></li>
+									<li style="margin-right: 0;"><img src="../img/goods_colorimg/10100050001.jpg"/><span></span></li>-->
+								</ul>
+							</div>
+						</div>
+						
+						
+						
+						<!--中间信息展示-->
+						<div class="info_box">
+							<h2>秋冬装女2018新款慵懒风俏皮心机复古温柔风搭配网纱裙子网红chic显瘦两件套装</h2>
+							<div class="goods_prowrap">
+								<dl class="price_cost">
+									<dt>价格：</dt>
+									<del>￥170</del>
+								</dl>
+								<dl class="property">
+									<dt>快抢价：</dt>
+									<dd class="price">￥78.00</dd>
+									<dd class="property_extra">
+										<span>评价：<span class="num pingjia">3</span></span>
+										<span>累计销量：<span class="num xiaoliang">12</span></span>
+									</dd>
+								</dl>
+								<dl class="promotions">
+									<dt>店铺优惠：</dt>
+									<dd class="promotions_cart">满250立减35</dd>
+								</dl>
+							</div>
+							<dl class="custom">
+								<dt>客服：</dt>
+								<dd>联系客服</dd>
+							</dl>
+							
+							<div class="goods_style">
+								<span>颜色：</span>
+								<ul>
+									<!--<li><img src="../img/goods_colorimg/10100010001.jpg"/></li>-->
+								</ul>
+							</div>
+							
+							<div class="goods_size">
+								<span>尺码：</span>
+								<ul>
+									<!--<li>M</li>-->
+								</ul>
+							</div>
+							<div class="goods_num_box">
+								<span>数量：</span>
+								<div class="goods_nums">
+									<input type="button" name="" id="goods_num_red" value="-" />
+									<input type="text" name="" id="goods_num" value="1" />
+									<input type="button" name="" id="goods_num_add" value="+" />
+								</div>
+								<span>库存<span class="stock_num">231</span>件</span>
+							</div>
+							<div class="goods_buy">
+								<a class="tobuy">立刻购买</a>
+								<a class="tocart">加入购物车</a>
+							</div>
+							<div class="services">
+								<span>服务承诺：</span>
+								<ul>
+									<li><img src="../css/img/baoyou.png"/>全国包邮</li>
+									<li><img src="../css/img/tuihuo.png"/>7天无理由退货</li>
+									<li><img src="../css/img/fahuo.png"/>72小时发货 </li>
+									<li><img src="../css/img/yanwu.png"/>延误必赔</li>
+									<li><img src="../css/img/yunfei.png"/>退货补运费</li>
+								</ul>
+							</div>
+							<dl class="pay">
+								<dt>支付方式：</dt>
+								<dd></dd>
+							</dl>
+						</div>
+					</div>
+					
+					
+					
+					
+					
+					<!--商品详情-->
+					<div class="col">
+						<!--左边-->
+						<div class="col_sidebar">
+							<div class="shop_info">
+								<div class="shop_name">
+									蘑菇街
+								</div>
+								<ul>
+									<li>
+										<p>描述</p>
+										<p class="num_low">10.00</p>
+									</li>
+									<li>
+										<p>质量</p>
+										<p class="num_low">10.00</p>
+									</li>
+									<li style="border: none;">
+										<p>服务</p>
+										<p class="num_low">10.00</p>
+									</li>
+								</ul>
+								<div class="shop_btns">
+									<a href="">收藏店铺</a>
+									<a href="">进入店铺</a>
+								</div>
+								<div class="shop_search">
+									<input type="text" name="" id="inptext" value="" />
+									<input type="button" name="inpbtn" id="inpbtn" value="店内搜索" />
+								</div>
+							</div>
+							<div class="classinfo">
+								<h3>本店分类</h3>
+								<a>全部商品</a>
+							</div>
+							<div class="module">
+								<h3>看了又看</h3>
+							</div>
+						</div>
+						<!--中间-->
+						<div class="col_main">
+							<ul>
+								<li><a class="check">商品详情</a></li>
+								<li><a>累计评价<em>8</em></a></li>
+								<li><a>本店同类商品</a></li>
+							</ul>
+							<div class="module">
+								<div class="module_graphic">商品详情</div>
+								<div class="module_rates">累计评价</div>
+								<div class="module_recommend">本店同类商品</div>
+							</div>
+						</div>
+						<!--右边-->
+						<div class="col_extra">
+							<div class="togger">
+								手机扫码下单
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+			
+			
+			<!--底部栏_______________________________________________-->
+			<div id="footer">
+				<div class="container">
+					<div class="footer_help">
+						<div>
+							<h4>-新手帮助-</h4>
+							<ul>
+								<li>常见问题</li>
+								<li>自助服务</li>
+								<li>联系客服</li>
+								<li>意见反馈</li>
+							</ul>
+						</div>
+						<div>
+							<h4>- 权益保障 -</h4>
+							<ul>
+								<li>全国包邮</li>
+								<li>7天无理由退货</li>
+								<li>退货运费补贴</li>
+								<li>限时发货</li>
+							</ul>
+						</div>
+						<div>
+							<h4>-支付方式-</h4>
+							<ul>
+								<li>微信支付</li>
+								<li>支付宝</li>
+								<li>白付美支付</li>
+							</ul>
+						</div>
+						<div>
+							<h4>-移动客户端下载-</h4>
+							<ul>
+								<li>蘑菇街</li>
+								<li>美丽说</li>
+								<li>uni引力</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer_info">
+						<ul>
+							<li>关于我们</li>
+							<li>招聘信息</li>
+							<li>联系我们</li>
+							<li>商家入驻</li>
+							<li>商家后台</li>
+							<li>蘑菇商学院</li>
+							<li>商家社区</li>
+							<li>规则中心</li>
+							<li>有害信息举报</li>
+							<span>©2018 Mogujie.com 杭州卷瓜网络有限公司</span>
+						</ul>
+					</div>
+					<div class="footer_copyright">
+						<p>营业执照：913301065526808764 | 网络文化经营许可证：浙网文（2016）0349-219号 | 增值电信业务经营许可证：浙B2-20110349 | 安全责任书 | 浙公网安备 33010602002329号 </p>
+						<p>互联网药品信息服务资格证书编号：（浙)-经营性-2018-0002 | 浙网食A33010003 | 出版物网络交易平台服务经营备案证 | （浙）网械平台备字[2018]第00006号 </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/goods.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/fadajing.js" type="text/javascript" charset="utf-8"></script>
+</html>
+

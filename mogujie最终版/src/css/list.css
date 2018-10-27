@@ -1,0 +1,184 @@
+@charset "UTF-8";
+#box {
+  background: white; }
+  #box #main .container #nav {
+    /*中部导航栏*/
+    width: 100%;
+    height: 321px;
+    margin-top: 30px;
+    border: 1px solid #e5e5e5; }
+    #box #main .container #nav .top_nav {
+      /*导航头列表表头*/
+      height: 38px;
+      width: 100%;
+      border-bottom: 1px solid #e5e5e5;
+      padding-left: 15px;
+      background-color: #fafafa; }
+      #box #main .container #nav .top_nav > ul {
+        line-height: 36px;
+        height: 100%; }
+        #box #main .container #nav .top_nav > ul > li {
+          height: 38px;
+          float: left;
+          text-align: center; }
+          #box #main .container #nav .top_nav > ul > li > a {
+            color: #333333;
+            display: inline-block;
+            height: 37px;
+            border-top: 2px solid #fafafa;
+            padding: 0 15px; }
+          #box #main .container #nav .top_nav > ul > li .check {
+            border-top: 2px solid #ff006a;
+            background: white; }
+    #box #main .container #nav .type_nav {
+      /*导航头列表内容*/
+      width: 100%;
+      height: 282px; }
+      #box #main .container #nav .type_nav > div {
+        height: 252px;
+        display: inline-block;
+        float: left;
+        margin: 15px 0; }
+      #box #main .container #nav .type_nav .type_nav_l {
+        width: 920px;
+        border-right: 1px dashed #e5e5e5; }
+        #box #main .container #nav .type_nav .type_nav_l > div {
+          margin: 10px 0 30px 15px;
+          display: inline-block;
+          width: 435px;
+          height: 90px; }
+          #box #main .container #nav .type_nav .type_nav_l > div > a {
+            float: left;
+            display: inline-block;
+            height: 64px;
+            width: 64px;
+            margin-top: 5px;
+            border: 1px solid #CCCCCC; }
+            #box #main .container #nav .type_nav .type_nav_l > div > a > img {
+              height: 64px;
+              width: 64px; }
+          #box #main .container #nav .type_nav .type_nav_l > div > ul {
+            width: 360px;
+            float: left;
+            display: inline-block;
+            font-size: 12px; }
+            #box #main .container #nav .type_nav .type_nav_l > div > ul > li {
+              float: left;
+              margin-bottom: 8px; }
+              #box #main .container #nav .type_nav .type_nav_l > div > ul > li > a {
+                border-right: 1xp solid #E5E5E5;
+                padding: 0 10px;
+                color: #333333; }
+      #box #main .container #nav .type_nav .type_nav_r {
+        width: 267px; }
+        #box #main .container #nav .type_nav .type_nav_r > img {
+          width: 188px;
+          height: 252px;
+          margin-left: 40px; }
+  #box #main .container h3 {
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 8px; }
+  #box #main .container .wall_nav {
+    /*价格排序栏*/
+    border: 1px solid #e5e5e5;
+    height: 40px;
+    padding: 7px 15px;
+    line-height: 26px;
+    overflow: hidden; }
+    #box #main .container .wall_nav > div {
+      float: left;
+      width: 46px;
+      height: 22px;
+      line-height: 22px;
+      display: inline-block;
+      border: 1px solid #dadada;
+      font-size: 0;
+      text-align: center;
+      margin: 0 5px; }
+      #box #main .container .wall_nav > div > span {
+        float: left;
+        color: #999;
+        font-size: 12px; }
+      #box #main .container .wall_nav > div > input {
+        font-size: 12px;
+        float: left;
+        border: none;
+        width: 32px;
+        height: 20px;
+        line-height: 22px; }
+      #box #main .container .wall_nav > div > a {
+        cursor: pointer;
+        font-size: 12px;
+        text-align: center; }
+    #box #main .container .wall_nav > span {
+      float: left;
+      color: #999;
+      display: inline-block;
+      margin: 0 5px; }
+  #box #main .container .wall_box {
+    /*内容栏*/
+    width: 100%;
+    margin-top: 30px; }
+    #box #main .container .wall_box > div {
+      display: inline-block;
+      height: 375px;
+      width: 220px;
+      float: left;
+      border: 1px solid #f6f6f6;
+      background: white;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      box-sizing: content-box;
+      cursor: pointer; }
+      #box #main .container .wall_box > div:hover {
+        border: 1px solid #ff5577; }
+      #box #main .container .wall_box > div .list_imgs {
+        width: 220px;
+        height: 293px; }
+        #box #main .container .wall_box > div .list_imgs img {
+          width: 220px;
+          height: 293px; }
+      #box #main .container .wall_box > div p {
+        height: 40px;
+        width: 220px;
+        overflow: hidden;
+        color: #333333; }
+      #box #main .container .wall_box > div .list_info {
+        height: 40px;
+        line-height: 40px; }
+        #box #main .container .wall_box > div .list_info b {
+          color: #333333;
+          margin-left: 5px; }
+        #box #main .container .wall_box > div .list_info del {
+          color: #333333;
+          font-size: 14px; }
+        #box #main .container .wall_box > div .list_info > div {
+          display: inline-block;
+          float: right; }
+          #box #main .container .wall_box > div .list_info > div i {
+            width: 15px;
+            height: 15px;
+            display: inline-block; }
+            #box #main .container .wall_box > div .list_info > div i img {
+              width: 15px; }
+          #box #main .container .wall_box > div .list_info > div span {
+            color: #999999;
+            font-size: 12px;
+            margin-left: 5px;
+            margin-right: 5px; }
+  #box #main .container #load {
+    height: 30px;
+    width: 100%;
+    background: #fafafa;
+    box-shadow: 1px 0 3px 0 #ff006a;
+    text-align: center;
+    line-height: 30px;
+    color: #ff006a;
+    font-size: 20px;
+    cursor: pointer; }
+
+/*# sourceMappingURL=list.css.map */

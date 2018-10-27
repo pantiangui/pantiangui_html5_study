@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<!--头部_______________________________________________-->
+			<div id="reg_hender">
+				<div class="container">
+					<a href="../index.html"></a>
+				</div>
+			</div>
+			
+			
+			<!--中部_______________________________________________-->
+			<div id="reg_content">
+				<div id="reg_box">
+					<div class="r_header">新用户注册</div>
+					<div class="r_main">
+						<input type="text" name="username" id="username" value="" placeholder="请输入邮箱/手机号" autofocus="autofocus"/>
+						<span id="username_cue"></span>
+						
+						<input type="password" name="pwd" id="pwd" value="" placeholder="请输入密码"/>
+						<span id="pwd_cue"></span>
+						
+						<input type="password" name="con_pwd" id="con_pwd" value="" placeholder="请输入确认密码"/>
+						<span id="con_pwd_cue"></span>
+						
+						<!--昵称-->
+						<input type="text" name="nickname" id="nickname" value="" placeholder="请输入昵称"/>
+						<span id="nickname_cue"></span>
+						
+						<!--验证码-->
+						<div class="codes">
+							<div class="code"><input type="text" name="code" id="code" value="" placeholder="请输入验证码"/></div>
+							<div id="code_case"></div>
+						</div>
+						<span id="code_cue"></span>
+						
+						<!--选择-->
+						<div class="r_checked">
+							<input type="checkbox" name="r_checked" id="r_checked" value="" />
+							我已阅读并且同意<a>《蘑菇街网络使用协议》</a>
+						</div>
+						
+						<input type="button" id="reg_btn" value="注册" />
+						<div class="tologin"><a href="login.html" id="tologin">< 已有账号登录</a></div>
+						
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--底部栏_______________________________________________-->
+			<div id="footer">
+				<div class="container">
+					<div class="footer_help">
+						<div>
+							<h4>-新手帮助-</h4>
+							<ul>
+								<li>常见问题</li>
+								<li>自助服务</li>
+								<li>联系客服</li>
+								<li>意见反馈</li>
+							</ul>
+						</div>
+						<div>
+							<h4>- 权益保障 -</h4>
+							<ul>
+								<li>全国包邮</li>
+								<li>7天无理由退货</li>
+								<li>退货运费补贴</li>
+								<li>限时发货</li>
+							</ul>
+						</div>
+						<div>
+							<h4>-支付方式-</h4>
+							<ul>
+								<li>微信支付</li>
+								<li>支付宝</li>
+								<li>白付美支付</li>
+							</ul>
+						</div>
+						<div>
+							<h4>-移动客户端下载-</h4>
+							<ul>
+								<li>蘑菇街</li>
+								<li>美丽说</li>
+								<li>uni引力</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer_info">
+						<ul>
+							<li>关于我们</li>
+							<li>招聘信息</li>
+							<li>联系我们</li>
+							<li>商家入驻</li>
+							<li>商家后台</li>
+							<li>蘑菇商学院</li>
+							<li>商家社区</li>
+							<li>规则中心</li>
+							<li>有害信息举报</li>
+							<span>©2018 Mogujie.com 杭州卷瓜网络有限公司</span>
+						</ul>
+					</div>
+					<div class="footer_copyright">
+						<p>营业执照：913301065526808764 | 网络文化经营许可证：浙网文（2016）0349-219号 | 增值电信业务经营许可证：浙B2-20110349 | 安全责任书 | 浙公网安备 33010602002329号 </p>
+						<p>互联网药品信息服务资格证书编号：（浙)-经营性-2018-0002 | 浙网食A33010003 | 出版物网络交易平台服务经营备案证 | （浙）网械平台备字[2018]第00006号 </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/register.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+	</head>
+	<body>
+		<div id="box">
+				
+				
+			
+			<!--侧边栏_______________________________________________-->
+			<div id="sidebar">
+				<div class="sidebar_box">
+					<!--头像-->
+					<div class="avatar"></div>
+					<!--购物车-->
+					<div class="cart"><a href="#">
+						<i class="icon"></i>
+						<div class="txt">购物车</div>
+						<div class="num"></div>
+					</a></div>
+					<!--优惠券-->
+					<div class="coupon"><a href="#">
+						<i class="icon"></i>
+						<div class="txt">优惠券</div>
+						<div class="num"></div>
+					</a></div>
+					<!--钱包-->
+					<div class="wallet"><a href="#">
+						<i class="icon"></i>
+						<div class="txt">钱包</div>
+					</a></div>
+					<!--足迹-->
+					<div class="brow"><a href="">
+						<i class="icon"></i>
+						<div class="txt">足迹</div>
+					</a></div>
+					<!--二维码-->
+					<div class="qrcode"><a href="">
+						<i></i>
+					</a></div>
+					<!--置顶-->
+					<div class="totop"><a href="">
+						<i></i>
+					</a></div>
+				</div>
+			</div>
+			
+			
+			
+			<!--顶部栏_______________________________________________-->
+			<div id="header">
+				<div class="container">
+					<a href="../index.html" title="回到首页"><i></i>蘑菇街首页</a>
+					<ul>
+						<!--登录-->
+						<li class="level"><a href="../login.html" id="header_login">登录</a>
+							<ol id="header_login_ol"></ol>
+						</li><i class="xian"></i>
+						<!--消息-->
+						<li id="header_news"></li><i class="header_news"></i>
+						<!--我的收藏-->
+						<li class="level" id="header_collect"></li><i class="header_collect"></i>
+						<li><a href="#"><i class="dingdans"></i>我的订单</a></li><i class="xian"></i>
+						<!--购物车-->
+						<li class="cart"><a href="#"><i class="cartico"></i>购物车</a>
+							<div id="cart">
+								<div class="cart_list">
+									<div class="cart_item1">
+										<a class="cart_item_img"><img src="../img/show_list/show_list01.jpg"/></a>
+										<div>
+											<p class="cart_item_title">韩版健身服五件套夏宽松大码运动服速干时尚拼接健身休闲服运动套装女秋</p>
+											<a class="price">￥159.00</a>
+											<a class="color">颜色:彩色底黑色</a>
+											<a class="size">尺码:37</a>
+											<a class="del">删除</a>
+										</div>
+									</div>
+								</div>
+								<div class="cart_look"><a>查看购物车</a></div>
+							</div>
+						</li><i class="xian"></i>
+						<!--客户服务-->
+						<li class="level"><a href="#">客户服务<i class="arrow"></i></a>
+							<ol>
+								<li>消费者服务</li>
+								<li>商家服务</li>
+								<li>规则中心</li>
+							</ol>
+						</li><i class="xian"></i>
+						<!--商家后台-->
+						<li class="level"><a href="#"style="padding-left: 45px;"><i class="shang_q"></i>商家后台 <i class="arrow"></i></a>
+							<ol>
+								<li>管理后台</li>
+								<li>商家社区</li>
+								<li>商家培训</li>
+								<li>市场入住</li>
+							</ol>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+			
+			<!--导航栏_______________________________________________-->
+			<div id="cart_nav">
+				<div class="container">
+					<a href="../index.html" class="logos"></a>
+					<div class="cart_navs"><img src="../css/img/cart_nav.png"/></div>
+				</div>
+			</div>
+			
+			<!--中间内容_____________________________________________-->
+			<div id="cart_main">
+				<div class="container">
+					<div class="cart_wrap">
+						<!--头部-->
+						<ul class="cart_slide">
+							<li><a href="" class="allgoods">全部商品<span>0</span></a></li>
+							<li><a href="">优惠<span>0</span></a></li>
+							<li><a href="">库存紧张<span>0</span></a></li>
+						</ul>
+						
+						
+						
+						
+						<!--主内容-->
+						<table border="0" cellspacing="0" cellpadding="0">
+							<!--表头-->
+							<thead>
+								<tr>
+									<th class="ckeck_wraps">
+										<input type="checkbox" name="" class="s_all" value="" />
+										<label>全选</label>
+									</th>
+									<th class="goods_wraps"></th>
+									<th class="goodsinfo_wraps">商品信息</th>
+									<th class="goodsprice_wraps">单价(元)</th>
+									<th class="goodsnum_wraps">数量</th>
+									<th class="goodssum_wraps">小计(元)</th>
+									<th class="goodsctrl_wraps">操作</th>
+								</tr>
+							</thead>
+							<!--<tbody>
+								_________________________________________________
+								店铺名
+								<tr class="shoptit">
+									<td colspan="7">
+										<input type="checkbox" name="" class="shopall" value="" />
+										<a>蘑菇街</a>
+									</td>
+								</tr>
+								
+								
+								<tr class="cart_item">
+									<td class="ckeck_wrap"><input type="checkbox" name="" id="" value="" /></td>
+									<td class="goods_wrap">
+										<a class="goods_img"><img src="../img/goods_colorimg/10100010001.jpg"/></a>
+										<a class="goods_title">2018韩版百搭跑步鞋ulzzang原宿i百搭跑步鞋ulzzang原宿ins超火运百搭跑步鞋ulzzang原宿ins超火运ns超火运动鞋女zipper老爹鞋小白鞋网红款</a>
+									</td>
+									<td class="goodsinfo_wrap">
+										<p>颜色：黑色</p>
+										<p>尺码：37</p>
+									</td>
+									<td class="goodsprice_wrap">
+										<del>150.00</del>
+										<p>1.00</p>
+									</td>
+									<td class="goodsnum_wrap">
+										<div class="goods_nums">
+											<input type="button" name="" class="goods_num_red" value="-" />
+											<input type="text" name="" class="goods_num" value="1" />
+											<input type="button" name="" class="goods_num_add" value="+" />
+										</div>
+									</td>
+									<td class="goodssum_wrap">
+										<p>1.00</p>
+									</td>
+									<td class="goodsctrl_del">
+										<a>删除</a>
+									</td>
+								</tr>
+							</tbody>-->
+							
+						</table>
+						
+						
+						
+						
+						<!--底部操作栏-->
+						<div class="cart_paybar">
+							<div class="_vmbox">
+								<input type="checkbox" name="all_check" id="all_checks" value="" />
+								<label>全选</label>
+								<a id="delall">删除</a>
+								<a>清空失效宝贝</a>
+								<a>移入收藏夹</a>
+							</div>
+							<div class="_info">
+								<div class="_info_deep">
+									共有  <span class="nums">0</span>  件商品，总计：
+									<span class="total">0.00</span>
+								</div>
+								<a id="cart_btn">去付款  ></a>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<!--底部栏_______________________________________________-->
+			<div id="footer">
+				<div class="container">
+					<div class="footer_help">
+						<div>
+							<h4>-新手帮助-</h4>
+							<ul>
+								<li>常见问题</li>
+								<li>自助服务</li>
+								<li>联系客服</li>
+								<li>意见反馈</li>
+							</ul>
+						</div>
+						<div>
+							<h4>- 权益保障 -</h4>
+							<ul>
+								<li>全国包邮</li>
+								<li>7天无理由退货</li>
+								<li>退货运费补贴</li>
+								<li>限时发货</li>
+							</ul>
+						</div>
+						<div>
+							<h4>-支付方式-</h4>
+							<ul>
+								<li>微信支付</li>
+								<li>支付宝</li>
+								<li>白付美支付</li>
+							</ul>
+						</div>
+						<div>
+							<h4>-移动客户端下载-</h4>
+							<ul>
+								<li>蘑菇街</li>
+								<li>美丽说</li>
+								<li>uni引力</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer_info">
+						<ul>
+							<li>关于我们</li>
+							<li>招聘信息</li>
+							<li>联系我们</li>
+							<li>商家入驻</li>
+							<li>商家后台</li>
+							<li>蘑菇商学院</li>
+							<li>商家社区</li>
+							<li>规则中心</li>
+							<li>有害信息举报</li>
+							<span>©2018 Mogujie.com 杭州卷瓜网络有限公司</span>
+						</ul>
+					</div>
+					<div class="footer_copyright">
+						<p>营业执照：913301065526808764 | 网络文化经营许可证：浙网文（2016）0349-219号 | 增值电信业务经营许可证：浙B2-20110349 | 安全责任书 | 浙公网安备 33010602002329号 </p>
+						<p>互联网药品信息服务资格证书编号：（浙)-经营性-2018-0002 | 浙网食A33010003 | 出版物网络交易平台服务经营备案证 | （浙）网械平台备字[2018]第00006号 </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/cart.js" type="text/javascript" charset="utf-8"></script>
+</html>
+

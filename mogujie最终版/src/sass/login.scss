@@ -1,0 +1,147 @@
+$all:100%;
+$fontcolor:#646464;
+$maincolor:#ff006a;
+
+
+//___________________________________________
+#login_hender{/*头部*/
+    box-sizing: content-box;
+    height: 96px;
+    width: $all;
+    padding: 20px 0 ;
+    .container{
+        >a{
+            display: inline-block;
+            width: 290px;
+            height: 96px;
+            background: url(../css/img/imgs.png);
+            background-position: -282px 0;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+//___________________________________________
+#login_content{/*中部登录窗*/
+    height: 600px;
+    width: $all;
+    background: url(../css/img/loginbg.png);
+    position: relative;
+    
+    #login_box{
+        position: absolute;
+        height: 348px;
+        width: 400px;
+        background-color: #ffeceb;
+        opacity: .9;
+        top: 80px;
+        left: 65%;
+        padding: 5px;
+        .l_header{
+            height: 50px;
+            width: 390px;
+            border-bottom: 1px solid #ccc;
+            >div{
+                display: inline-block;
+                float: left;
+                height: 50;
+                width: 125px;
+                margin-left: 35px;
+                margin-right: 35px;
+                text-align: center;
+                line-height: 50px;
+                font-weight: bold;
+                color: #333333;
+            }
+        }
+        
+        .l_main{
+            padding-top: 20px;
+            width: 390px;
+            ._text{/*输入框*/
+                margin-top: 2px;
+                >input{
+                    width: 300px;
+                    height: 40px;
+                    border: 1px solid #ccc;
+                    padding: 0 6px;
+                    background: none;
+                    margin-left: 45px;
+                    font-size: 12px;
+                }
+            }
+              
+            >span{/*提示内容*/
+                display: inline-block;
+                width: 300px;
+                height: 18px;
+                margin-left: 45px;
+                font-size: 12px;
+            }
+            ._btn{/*登录按钮*/
+                >input{
+                    width: 300px;
+                    height: 40px;
+                    margin-left: 45px;
+                    background: #ff5777;
+                    margin-top: 10px;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    color: #fff;
+                }
+            }
+            ._reg{/*注册*/
+               margin-top: 20px;
+               margin-left: 45px;
+                >a{
+                    font-size: 12px;
+                    color: #333333;
+                    &:hover{
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+                .register{
+                    margin-left: 195px;
+                }
+            }
+            ._others{/*其他方式登录*/
+                margin-top: 15px;
+                margin-left: 60px;
+                >a{
+                    display: inline-block;
+                    font-size: 12px;
+                    width: 80px;
+                    height: 19px;
+                    line-height: 19px;
+                    position: relative;
+                    padding-left: 25px;
+                    margin-left: 35px;
+                    cursor: pointer;
+                    >i{
+                        position: absolute;
+                        left: 0;
+                        display: inline-block;
+                        height: 19px;
+                        width: 19px;
+                    }
+                    .qqlogo{
+                        background: url(../css/img/qqlogo.png);
+                    }
+                    .weixinlogo{
+                        background: url(../css/img/weixinlogo.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

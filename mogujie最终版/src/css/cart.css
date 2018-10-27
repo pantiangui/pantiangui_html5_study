@@ -1,0 +1,237 @@
+@charset "UTF-8";
+#box {
+  background: white; }
+  #box #cart_nav {
+    /**/
+    height: 73px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    background: #F2F2F2; }
+    #box #cart_nav .container .logos {
+      display: inline-block;
+      float: left;
+      height: 60px;
+      width: 200px;
+      background: url(../css/img/imgs.png) no-repeat;
+      background-position: -1px 0; }
+    #box #cart_nav .container .cart_navs {
+      height: 72px;
+      width: 535px;
+      display: inline-block;
+      float: right; }
+      #box #cart_nav .container .cart_navs > img {
+        height: 72px;
+        width: 535px; }
+  #box #cart_main .container .cart_wrap .cart_slide {
+    /*头部*/
+    margin-top: 30px;
+    height: 38px;
+    width: 100%;
+    line-height: 38px; }
+    #box #cart_main .container .cart_wrap .cart_slide > li {
+      float: left;
+      padding: 0 20px;
+      font-size: 20px; }
+      #box #cart_main .container .cart_wrap .cart_slide > li > a {
+        display: inline-block;
+        height: 38px;
+        padding: 0 5px;
+        color: #333;
+        border-bottom: 3px solid white; }
+        #box #cart_main .container .cart_wrap .cart_slide > li > a > span {
+          margin-left: 5px; }
+      #box #cart_main .container .cart_wrap .cart_slide > li .allgoods {
+        color: #f57;
+        border-bottom: 3px solid #f57; }
+  #box #cart_main .container .cart_wrap table {
+    width: 100%; }
+    #box #cart_main .container .cart_wrap table thead {
+      font-size: 13px;
+      color: #333; }
+      #box #cart_main .container .cart_wrap table thead > tr {
+        height: 48px;
+        line-height: 48px;
+        background: #F6F6F6;
+        border: 1px solid #e5e5e5;
+        font-weight: normal; }
+        #box #cart_main .container .cart_wrap table thead > tr > th {
+          font-weight: normal; }
+        #box #cart_main .container .cart_wrap table thead > tr .ckeck_wraps {
+          /*全选*/
+          width: 90px;
+          font-weight: normal; }
+          #box #cart_main .container .cart_wrap table thead > tr .ckeck_wraps > input {
+            cursor: pointer; }
+          #box #cart_main .container .cart_wrap table thead > tr .ckeck_wraps label {
+            margin-left: 5px; }
+        #box #cart_main .container .cart_wrap table thead > tr .goods_wraps {
+          /*商品名*/
+          width: 612px; }
+        #box #cart_main .container .cart_wrap table thead > tr .goodsinfo_wraps {
+          /*商品信息*/
+          width: 140px; }
+        #box #cart_main .container .cart_wrap table thead > tr .goodsprice_wraps {
+          /*单价*/
+          width: 76px; }
+        #box #cart_main .container .cart_wrap table thead > tr .goodsnum_wraps {
+          /*数量*/
+          width: 100px; }
+        #box #cart_main .container .cart_wrap table thead > tr .goodssum_wraps {
+          /*小计*/
+          width: 100px; }
+        #box #cart_main .container .cart_wrap table thead > tr .goodsctrl_wraps {
+          /*操作*/
+          width: 80px; }
+    #box #cart_main .container .cart_wrap table tbody #aaa {
+      background: yellow; }
+    #box #cart_main .container .cart_wrap table tbody .shoptit {
+      /*店铺名*/
+      font-size: 12px; }
+      #box #cart_main .container .cart_wrap table tbody .shoptit > td {
+        font-weight: bold;
+        box-sizing: content-box;
+        padding: 24px 10px 16px 24px; }
+        #box #cart_main .container .cart_wrap table tbody .shoptit > td > input {
+          cursor: pointer;
+          display: none; }
+        #box #cart_main .container .cart_wrap table tbody .shoptit > td > a:hover {
+          cursor: pointer;
+          text-decoration: underline; }
+    #box #cart_main .container .cart_wrap table tbody .cart_item {
+      /*内容*/
+      border: 1px solid #e5e5e5; }
+      #box #cart_main .container .cart_wrap table tbody .cart_item .ckeck_wrap {
+        /*选框*/
+        padding-left: 26px; }
+        #box #cart_main .container .cart_wrap table tbody .cart_item .ckeck_wrap > input {
+          cursor: pointer; }
+      #box #cart_main .container .cart_wrap table tbody .cart_item .goods_wrap {
+        /*图片及标题*/
+        box-sizing: content-box;
+        padding: 15px 0 15px 0; }
+        #box #cart_main .container .cart_wrap table tbody .cart_item .goods_wrap > * {
+          float: left; }
+        #box #cart_main .container .cart_wrap table tbody .cart_item .goods_wrap .goods_img {
+          height: 80px;
+          cursor: pointer;
+          display: inline-block;
+          width: 80px;
+          border: 1px double #CCCCCC; }
+          #box #cart_main .container .cart_wrap table tbody .cart_item .goods_wrap .goods_img img {
+            width: 78px;
+            height: 78px; }
+        #box #cart_main .container .cart_wrap table tbody .cart_item .goods_wrap .goods_title {
+          cursor: pointer;
+          display: inline-block;
+          width: 480px;
+          margin-left: 20px;
+          font-size: 14px;
+          color: #333333; }
+          #box #cart_main .container .cart_wrap table tbody .cart_item .goods_wrap .goods_title:hover {
+            text-decoration: underline; }
+      #box #cart_main .container .cart_wrap table tbody .cart_item .goodsinfo_wrap {
+        /*商品信息*/ }
+        #box #cart_main .container .cart_wrap table tbody .cart_item .goodsinfo_wrap > p {
+          font-size: 12px;
+          color: #666666;
+          margin-bottom: 10px; }
+      #box #cart_main .container .cart_wrap table tbody .cart_item .goodsprice_wrap {
+        /*价格*/ }
+        #box #cart_main .container .cart_wrap table tbody .cart_item .goodsprice_wrap del {
+          display: inline-block;
+          margin-bottom: 10px;
+          color: #999999;
+          font-size: 12px; }
+        #box #cart_main .container .cart_wrap table tbody .cart_item .goodsprice_wrap p {
+          margin-bottom: 10px;
+          font-size: 14px;
+          color: #666666;
+          font-weight: 700; }
+      #box #cart_main .container .cart_wrap table tbody .cart_item .goodsnum_wrap {
+        /*数量*/ }
+        #box #cart_main .container .cart_wrap table tbody .cart_item .goodsnum_wrap > div {
+          display: inline-block;
+          width: 106px;
+          height: 28px;
+          font-size: 0; }
+          #box #cart_main .container .cart_wrap table tbody .cart_item .goodsnum_wrap > div > * {
+            float: left;
+            border: none;
+            border: 1px solid #CCCCCC;
+            background: none; }
+          #box #cart_main .container .cart_wrap table tbody .cart_item .goodsnum_wrap > div .goods_num_red, #box #cart_main .container .cart_wrap table tbody .cart_item .goodsnum_wrap > div .goods_num_add {
+            text-align: center;
+            height: 28px;
+            width: 28px;
+            font-size: 25px;
+            color: #999999;
+            line-height: 24px;
+            cursor: pointer; }
+          #box #cart_main .container .cart_wrap table tbody .cart_item .goodsnum_wrap > div .goods_num {
+            height: 28px;
+            width: 50px;
+            font-size: 16px;
+            text-align: center; }
+      #box #cart_main .container .cart_wrap table tbody .cart_item .goodssum_wrap {
+        /*小计*/
+        text-align: center; }
+        #box #cart_main .container .cart_wrap table tbody .cart_item .goodssum_wrap > p {
+          font-weight: bold;
+          color: #ff5777; }
+      #box #cart_main .container .cart_wrap table tbody .cart_item .goodsctrl_del {
+        /*删除*/
+        font-size: 12px;
+        color: #333;
+        text-align: center; }
+        #box #cart_main .container .cart_wrap table tbody .cart_item .goodsctrl_del > a:hover {
+          cursor: pointer;
+          text-decoration: underline; }
+  #box #cart_main .container .cart_wrap .cart_paybar {
+    /*底部操作栏*/
+    height: 52px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #e5e5e5;
+    font-size: 12px;
+    color: #333333;
+    line-height: 50px; }
+    #box #cart_main .container .cart_wrap .cart_paybar ._vmbox {
+      float: left;
+      height: 50px;
+      width: 500px; }
+      #box #cart_main .container .cart_wrap .cart_paybar ._vmbox #all_checks {
+        margin-left: 28px;
+        cursor: pointer; }
+      #box #cart_main .container .cart_wrap .cart_paybar ._vmbox > label {
+        margin-left: 5px; }
+      #box #cart_main .container .cart_wrap .cart_paybar ._vmbox > a {
+        margin-left: 30px; }
+        #box #cart_main .container .cart_wrap .cart_paybar ._vmbox > a:hover {
+          cursor: pointer;
+          text-decoration: underline; }
+    #box #cart_main .container .cart_wrap .cart_paybar ._info {
+      float: right;
+      height: 50px;
+      width: 430px; }
+      #box #cart_main .container .cart_wrap .cart_paybar ._info ._info_deep {
+        float: left;
+        display: inline-block; }
+        #box #cart_main .container .cart_wrap .cart_paybar ._info ._info_deep > span {
+          color: #ff5777; }
+        #box #cart_main .container .cart_wrap .cart_paybar ._info ._info_deep .total {
+          font-size: 24px;
+          font-weight: bold; }
+      #box #cart_main .container .cart_wrap .cart_paybar ._info > a {
+        float: right;
+        display: inline-block;
+        height: 50px;
+        width: 152px;
+        background: #d8d8d8;
+        font-size: 24px;
+        color: white;
+        text-align: center;
+        cursor: pointer; }
+        #box #cart_main .container .cart_wrap .cart_paybar ._info > a:hover {
+          opacity: 0.8; }
+
+/*# sourceMappingURL=cart.css.map */

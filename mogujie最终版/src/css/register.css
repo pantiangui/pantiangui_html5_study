@@ -1,0 +1,148 @@
+@charset "UTF-8";
+#reg_hender {
+  /*头部*/
+  box-sizing: content-box;
+  height: 96px;
+  width: 100%;
+  padding: 20px 0; }
+  #reg_hender .container > a {
+    display: inline-block;
+    width: 290px;
+    height: 96px;
+    background: url(../css/img/imgs.png);
+    background-position: -282px 0;
+    background-repeat: no-repeat; }
+
+#reg_content {
+  /*中部注册窗*/
+  height: 600px;
+  width: 100%;
+  background: url(../css/img/loginbg.png);
+  position: relative; }
+  #reg_content #reg_box {
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    background-color: #ffeceb;
+    opacity: .9;
+    top: 50px;
+    left: 65%;
+    padding: 5px; }
+    #reg_content #reg_box .r_header {
+      height: 50px;
+      width: 390px;
+      border-bottom: 1px solid #ccc;
+      font-weight: bold;
+      color: #333333;
+      text-align: center;
+      line-height: 50px; }
+    #reg_content #reg_box .r_main {
+      width: 390px; }
+      #reg_content #reg_box .r_main > span {
+        /*验证提示*/
+        display: inline-block;
+        width: 300px;
+        height: 18px;
+        margin-left: 45px;
+        font-size: 12px; }
+      #reg_content #reg_box .r_main #username {
+        /*用户名*/
+        margin-top: 20px;
+        width: 300px;
+        height: 35px;
+        border: 1px solid #ccc;
+        padding: 0 6px;
+        background: none;
+        margin-left: 45px;
+        font-size: 12px; }
+      #reg_content #reg_box .r_main #pwd {
+        /*密码*/
+        margin-top: 2px;
+        width: 300px;
+        height: 35px;
+        border: 1px solid #ccc;
+        padding: 0 6px;
+        background: none;
+        margin-left: 45px;
+        font-size: 12px; }
+      #reg_content #reg_box .r_main #con_pwd {
+        /*确认密码*/
+        margin-top: 2px;
+        width: 300px;
+        height: 35px;
+        border: 1px solid #ccc;
+        padding: 0 6px;
+        background: none;
+        margin-left: 45px;
+        font-size: 12px; }
+      #reg_content #reg_box .r_main #nickname {
+        /*昵称*/
+        margin-top: 2px;
+        width: 300px;
+        height: 35px;
+        border: 1px solid #ccc;
+        padding: 0 6px;
+        background: none;
+        margin-left: 45px;
+        font-size: 12px; }
+      #reg_content #reg_box .r_main .codes {
+        /*验证码*/
+        width: 300px;
+        height: 35px;
+        margin-top: 2px;
+        margin-left: 45px; }
+        #reg_content #reg_box .r_main .codes .code {
+          float: left;
+          display: inline-block; }
+          #reg_content #reg_box .r_main .codes .code #code {
+            /*验证码输入框*/
+            width: 150px;
+            height: 35px;
+            border: 1px solid #ccc;
+            padding: 0 6px;
+            background: none;
+            font-size: 12px; }
+        #reg_content #reg_box .r_main .codes #code_case {
+          cursor: pointer;
+          margin-left: 50px;
+          width: 100px;
+          height: 33px;
+          border: 1px solid #DDDDDD;
+          display: inline-block;
+          text-align: center;
+          line-height: 33px;
+          font-size: 18px; }
+      #reg_content #reg_box .r_main .r_checked {
+        font-size: 12px;
+        margin-left: 45px;
+        margin-top: 5px;
+        color: #333333; }
+        #reg_content #reg_box .r_main .r_checked > input {
+          margin-right: 5px;
+          cursor: pointer; }
+        #reg_content #reg_box .r_main .r_checked > a {
+          text-decoration: underline;
+          cursor: pointer;
+          color: #111; }
+      #reg_content #reg_box .r_main #reg_btn {
+        /*注册按钮*/
+        margin-top: 20px;
+        width: 300px;
+        height: 40px;
+        margin-left: 45px;
+        background: #ff006a;
+        margin-top: 20px;
+        border-radius: 2px;
+        cursor: pointer;
+        color: #fff; }
+      #reg_content #reg_box .r_main .tologin {
+        margin-top: 15px;
+        margin-left: 250px; }
+        #reg_content #reg_box .r_main .tologin #tologin {
+          font-size: 13px;
+          color: #333333; }
+          #reg_content #reg_box .r_main .tologin #tologin:hover {
+            cursor: pointer;
+            text-decoration: underline; }
+
+/*# sourceMappingURL=register.css.map */

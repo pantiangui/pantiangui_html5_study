@@ -1,0 +1,663 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+#box {
+  min-width: 1000px;
+  min-height: 600px;
+  background: #f6f6f6; }
+  #box #sticky {
+    /*顶部滑动菜单*/
+    height: 50px;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    box-shadow: 0 1px 6px 0 #ccc;
+    display: none;
+    position: fixed;
+    top: -100px; }
+    #box #sticky .container .sticky_nav_menu {
+      display: inline-block;
+      float: left;
+      width: 130px;
+      height: 50px;
+      padding: 0px 5px;
+      cursor: pointer;
+      margin-left: 65px;
+      text-align: center;
+      position: relative; }
+      #box #sticky .container .sticky_nav_menu:hover .sticky_menu {
+        display: block; }
+      #box #sticky .container .sticky_nav_menu > i {
+        display: inline-block;
+        position: absolute; }
+      #box #sticky .container .sticky_nav_menu > span {
+        display: inline-block;
+        height: 100%;
+        line-height: 50px;
+        font-size: 14px;
+        color: #ff0077; }
+      #box #sticky .container .sticky_nav_menu .s_l {
+        left: 1px;
+        top: 15px;
+        width: 20px;
+        height: 20px;
+        background: url(../css/img/imgs.png);
+        background-position: -4px -174px; }
+      #box #sticky .container .sticky_nav_menu .s_r {
+        top: 24px;
+        right: 1px;
+        border-width: 6px;
+        border-style: solid;
+        border-color: #ff0077 transparent transparent; }
+      #box #sticky .container .sticky_nav_menu .sticky_menu {
+        position: absolute;
+        z-index: 9;
+        left: -64px;
+        top: 48px;
+        display: none; }
+        #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu {
+          /*主导航栏*/
+          width: 256px;
+          height: 440px;
+          position: relative; }
+          #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu:hover .level_nav {
+            display: block; }
+          #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu > ul {
+            height: 100%;
+            width: 100%;
+            background: #222222;
+            opacity: 0.9;
+            margin-top: 2px; }
+            #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu > ul .nav_list {
+              height: 31px;
+              width: 100%;
+              line-height: 31px;
+              padding-left: 18px;
+              border-left: 2px solid #fff7f8; }
+              #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu > ul .nav_list:hover {
+                border-left: 2px solid #ff006a;
+                background: black; }
+              #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu > ul .nav_list dl > * {
+                float: left; }
+              #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu > ul .nav_list dl a:hover {
+                text-decoration: underline; }
+              #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu > ul .nav_list dl .hot {
+                width: 12px;
+                height: 13px;
+                display: inline-block;
+                margin-left: 2px;
+                background: url(../css/img/hot.png);
+                background-size: 12px 13px; }
+              #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu > ul .nav_list dl dt {
+                font-family: 'PingFang SC';
+                font-size: 14px;
+                font-weight: 600; }
+                #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu > ul .nav_list dl dt a {
+                  color: white; }
+              #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu > ul .nav_list dl dd {
+                font-size: 12px; }
+                #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu > ul .nav_list dl dd a {
+                  color: white;
+                  margin-left: 16px; }
+              #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu > ul .nav_list dl .fonthot {
+                color: #ff006a !important; }
+          #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav {
+            /*二级导航*/
+            height: 440px;
+            width: 820px;
+            background: white;
+            position: absolute;
+            z-index: 5;
+            display: none;
+            top: 0;
+            left: 256px; }
+            #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_left {
+              float: left;
+              display: inline-block;
+              padding: 15px;
+              height: 100%;
+              width: 549px;
+              border-right: 1px solid #F2F2F2; }
+              #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_left > div {
+                width: 100%;
+                height: 115px;
+                margin-bottom: 10px; }
+                #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_left > div .level_left_titles {
+                  box-sizing: content-box;
+                  height: 25px;
+                  display: block;
+                  padding-top: 10px;
+                  line-height: 25px; }
+                  #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_left > div .level_left_titles > h5 {
+                    display: inline-block;
+                    float: left;
+                    font-size: 16px;
+                    color: #333333; }
+                  #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_left > div .level_left_titles > a {
+                    float: right;
+                    cursor: pointer;
+                    font-size: 13px;
+                    color: #333333; }
+                #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_left > div .level_left_item {
+                  box-sizing: content-box;
+                  height: 80px;
+                  width: 500px; }
+                  #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_left > div .level_left_item > ul {
+                    display: block; }
+                    #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_left > div .level_left_item > ul > li {
+                      float: left;
+                      color: #646464;
+                      margin-right: 25px;
+                      font-size: 12px;
+                      margin-top: 10px; }
+                      #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_left > div .level_left_item > ul > li:hover {
+                        cursor: pointer;
+                        text-decoration: underline; }
+                    #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_left > div .level_left_item > ul .hot {
+                      color: #ff006a; }
+            #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_right {
+              float: left;
+              display: inline-block;
+              width: 271px;
+              height: 440px; }
+              #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_right .level_right_title {
+                height: 45px;
+                width: 100%;
+                text-align: center;
+                line-height: 45px;
+                color: #333333; }
+              #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_right .level_right_item ul li {
+                width: 100px;
+                height: 130px;
+                float: left;
+                margin-left: 24px; }
+                #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_right .level_right_item ul li:hover {
+                  cursor: pointer; }
+                  #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_right .level_right_item ul li:hover > a {
+                    opacity: 0.7;
+                    cursor: pointer; }
+                #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_right .level_right_item ul li > a img {
+                  width: 100px;
+                  height: 100px; }
+                #box #sticky .container .sticky_nav_menu .sticky_menu .nav_menu .level_nav .level_right .level_right_item ul li p {
+                  margin-top: 4px;
+                  color: #333333;
+                  height: 14px;
+                  overflow: hidden;
+                  font-size: 12px;
+                  /*省略号*/
+                  text-overflow: ellipsis;
+                  white-space: nowrap; }
+    #box #sticky .container .sticky_so {
+      display: inline-block;
+      width: 482px;
+      height: 50px;
+      margin-left: 145px;
+      font-size: 0; }
+      #box #sticky .container .sticky_so .inner_box {
+        height: 36px;
+        width: 480px;
+        border: 1px solid #ff006a;
+        margin-top: 7px;
+        border-radius: 0 5px 5px 0; }
+        #box #sticky .container .sticky_so .inner_box .selected {
+          /*搜商品*/
+          cursor: pointer;
+          display: inline-block;
+          height: 34px;
+          width: 60px;
+          line-height: 34px;
+          position: relative;
+          z-index: 5; }
+          #box #sticky .container .sticky_so .inner_box .selected span {
+            margin-left: 8px;
+            color: #ff177d;
+            display: inline-block;
+            float: left;
+            font-size: 14px; }
+          #box #sticky .container .sticky_so .inner_box .selected i {
+            float: left;
+            display: inline-block;
+            height: 4px;
+            width: 9px;
+            background: url(../css/img/imgs.png);
+            background-position: -56px -228px;
+            margin-top: 15px; }
+          #box #sticky .container .sticky_so .inner_box .selected ul {
+            position: absolute;
+            top: 34px;
+            z-index: 10;
+            width: 80px;
+            height: 80px; }
+        #box #sticky .container .sticky_so .inner_box form {
+          height: 34px;
+          overflow: hidden;
+          display: inline-block; }
+          #box #sticky .container .sticky_so .inner_box form #select {
+            width: 316px;
+            height: 34px;
+            margin-left: 2px; }
+          #box #sticky .container .sticky_so .inner_box form #ss_sub {
+            height: 34px;
+            width: 100px;
+            background: #ff014a;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            color: white; }
+            #box #sticky .container .sticky_so .inner_box form #ss_sub:hover {
+              cursor: pointer;
+              background: #ff006a; }
+  #box #sidebar {
+    /*侧边栏*/
+    width: 30px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: #272727;
+    text-align: center;
+    z-index: 5; }
+    #box #sidebar .sidebar_box {
+      padding-top: 69px;
+      position: relative;
+      height: 100%; }
+      #box #sidebar .sidebar_box a {
+        display: inline-block;
+        color: white;
+        font-size: 12px;
+        margin: 0 auto;
+        width: 22px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #979797; }
+      #box #sidebar .sidebar_box > div {
+        cursor: pointer; }
+        #box #sidebar .sidebar_box > div:hover {
+          background: #ef2f23; }
+          #box #sidebar .sidebar_box > div:hover > a {
+            border-bottom: 1px solid #ef2f23; }
+      #box #sidebar .sidebar_box .avatar {
+        /*头像*/ }
+        #box #sidebar .sidebar_box .avatar > a {
+          width: 22px;
+          height: 40px;
+          overflow: hidden; }
+          #box #sidebar .sidebar_box .avatar > a > img {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%; }
+      #box #sidebar .sidebar_box .cart {
+        /*购物车*/ }
+        #box #sidebar .sidebar_box .cart i {
+          display: inline-block;
+          height: 16px;
+          width: 17px;
+          background: url(../css/img/imgs.png);
+          background-position: -274px -135px; }
+      #box #sidebar .sidebar_box .coupon {
+        /*优惠券*/ }
+        #box #sidebar .sidebar_box .coupon i {
+          display: inline-block;
+          height: 13px;
+          width: 18px;
+          background: url(../css/img/imgs.png);
+          background-position: -273px -168px; }
+      #box #sidebar .sidebar_box .wallet {
+        /*钱包*/ }
+        #box #sidebar .sidebar_box .wallet i {
+          display: inline-block;
+          height: 12px;
+          width: 13px;
+          background: url(../css/img/imgs.png);
+          background-position: -276px -228px; }
+      #box #sidebar .sidebar_box .brow {
+        /*足迹*/ }
+        #box #sidebar .sidebar_box .brow i {
+          display: inline-block;
+          height: 18px;
+          width: 17px;
+          background: url(../css/img/imgs.png);
+          background-position: -276px -196px; }
+      #box #sidebar .sidebar_box .qrcode {
+        /*二维码*/ }
+        #box #sidebar .sidebar_box .qrcode:hover {
+          background: #272727; }
+          #box #sidebar .sidebar_box .qrcode:hover > a {
+            border-bottom: 1px solid #979797; }
+        #box #sidebar .sidebar_box .qrcode i {
+          display: inline-block;
+          height: 16px;
+          width: 16px;
+          background: url(../css/img/imgs.png);
+          background-position: -274px -311px; }
+      #box #sidebar .sidebar_box .totop {
+        /*置顶*/
+        display: none;
+        position: absolute;
+        bottom: 50px;
+        width: 100%; }
+        #box #sidebar .sidebar_box .totop:hover > a {
+          border-top: 1px solid #ef2f23; }
+        #box #sidebar .sidebar_box .totop a {
+          border-bottom: none;
+          border-top: 1px solid #979797; }
+          #box #sidebar .sidebar_box .totop a i {
+            display: inline-block;
+            height: 14px;
+            width: 17px;
+            background: url(../css/img/imgs.png);
+            background-position: -274px -287px; }
+  #box #header {
+    /*顶部栏*/
+    height: 31px;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    background: #f2f2f2;
+    line-height: 31px;
+    font-size: 12px; }
+    #box #header .container > a {
+      color: #646464; }
+      #box #header .container > a i {
+        display: inline-block;
+        background: url(../css/img/imgs.png);
+        background-position: -6px -242px;
+        height: 12px;
+        width: 12px;
+        margin-right: 5px; }
+    #box #header .container ul {
+      float: right;
+      height: 21px; }
+      #box #header .container ul li {
+        float: left;
+        color: #646464;
+        display: inline-block; }
+        #box #header .container ul li > a {
+          display: inline-block;
+          padding: 0 19px 0 19px;
+          position: relative;
+          /*图标*/ }
+          #box #header .container ul li > a .dingdans {
+            display: inline-block;
+            background: url(../css/img/imgs.png);
+            background-position: -4px -539px;
+            height: 10px;
+            width: 13px;
+            margin-right: 5px; }
+          #box #header .container ul li > a .cartico {
+            display: inline-block;
+            height: 14px;
+            width: 17px;
+            background: url(../css/img/imgs.png);
+            background-position: -4px -428px;
+            margin-right: 5px; }
+          #box #header .container ul li > a .arrow {
+            display: inline-block;
+            height: 6px;
+            width: 10px;
+            background: url(../css/img/imgs.png);
+            background-position: -4px -476px;
+            margin-left: 2px; }
+          #box #header .container ul li > a .shang_q {
+            display: inline-block;
+            height: 21px;
+            width: 21px;
+            background: url(../css/img/imgs.png);
+            background-position: -4px -572px;
+            position: absolute;
+            left: 19px;
+            top: 5px; }
+      #box #header .container ul .cart {
+        /*购物车二级菜单*/
+        position: relative; }
+        #box #header .container ul .cart:hover #cart {
+          display: block; }
+        #box #header .container ul .cart #cart {
+          display: none;
+          z-index: 5;
+          width: 280px;
+          position: absolute;
+          left: -90px;
+          background: #EEEEEE;
+          border-radius: 0 0 5px 5px;
+          padding: 10px;
+          line-height: 16px; }
+          #box #header .container ul .cart #cart .cart_list {
+            border-bottom: 1px solid #CCCCCC; }
+            #box #header .container ul .cart #cart .cart_list > div {
+              height: 50px;
+              width: 100%;
+              margin-bottom: 10px; }
+              #box #header .container ul .cart #cart .cart_list > div .cart_item_img {
+                margin-left: 0;
+                display: inline-block;
+                height: 50px;
+                width: 50px;
+                float: left;
+                cursor: pointer; }
+                #box #header .container ul .cart #cart .cart_list > div .cart_item_img img {
+                  height: 50px;
+                  width: 50px; }
+              #box #header .container ul .cart #cart .cart_list > div > div {
+                display: inline-block;
+                width: 200px;
+                height: 50px;
+                float: left;
+                margin-left: 10px; }
+                #box #header .container ul .cart #cart .cart_list > div > div .cart_item_title {
+                  margin-top: 6px;
+                  display: inline-block;
+                  width: 120px;
+                  height: 16px;
+                  overflow: hidden;
+                  font-size: 12px;
+                  color: black; }
+                  #box #header .container ul .cart #cart .cart_list > div > div .cart_item_title:hover {
+                    cursor: pointer;
+                    text-decoration: underline; }
+                #box #header .container ul .cart #cart .cart_list > div > div > a {
+                  display: inline-block;
+                  color: #646464; }
+                #box #header .container ul .cart #cart .cart_list > div > div .price {
+                  margin-left: 20px; }
+                #box #header .container ul .cart #cart .cart_list > div > div .del {
+                  margin-left: 25px;
+                  cursor: pointer; }
+          #box #header .container ul .cart #cart .cart_look {
+            height: 35px;
+            width: 100%; }
+            #box #header .container ul .cart #cart .cart_look > a {
+              display: inline-block;
+              height: 25px;
+              width: 100px;
+              background: #ff006a;
+              color: white;
+              font-size: 14px;
+              line-height: 25px;
+              text-align: center;
+              border-radius: 5px;
+              margin-left: 160px;
+              margin-top: 10px; }
+              #box #header .container ul .cart #cart .cart_look > a:hover {
+                cursor: pointer;
+                text-decoration: underline; }
+      #box #header .container ul .level {
+        /*顶部公共二级菜单样式*/
+        position: relative; }
+        #box #header .container ul .level:hover ol {
+          display: block; }
+        #box #header .container ul .level ol {
+          display: none;
+          position: absolute;
+          width: 100px;
+          background: #EEEEEE;
+          border-radius: 0 0 5px 5px; }
+          #box #header .container ul .level ol li {
+            width: 100px;
+            text-align: center; }
+            #box #header .container ul .level ol li:hover {
+              cursor: pointer;
+              background: #ddd; }
+      #box #header .container ul .xian {
+        /*竖线*/
+        float: left;
+        display: inline-block;
+        background: url(../css/img/imgs.png);
+        height: 14px;
+        width: 1px;
+        background-position: -102px -541px;
+        margin-top: 9px; }
+  #box #header_mid {
+    /*搜索栏*/
+    height: 90px;
+    width: 100%;
+    font-size: 0px;
+    background: white; }
+    #box #header_mid .container > a {
+      float: left; }
+      #box #header_mid .container > a img {
+        height: 90px;
+        width: 240px; }
+    #box #header_mid .container .search {
+      /*中间搜索栏*/
+      display: inline-block;
+      width: 482px;
+      height: 90px;
+      margin-left: 100px; }
+      #box #header_mid .container .search .inner_box {
+        height: 36px;
+        width: 480px;
+        border: 1px solid #ff006a;
+        margin-top: 25px;
+        border-radius: 0 5px 5px 0; }
+        #box #header_mid .container .search .inner_box .selected {
+          /*搜商品*/
+          cursor: pointer;
+          display: inline-block;
+          height: 34px;
+          width: 60px;
+          line-height: 34px;
+          position: relative;
+          z-index: 5; }
+          #box #header_mid .container .search .inner_box .selected span {
+            margin-left: 8px;
+            color: #ff177d;
+            display: inline-block;
+            float: left;
+            font-size: 14px; }
+          #box #header_mid .container .search .inner_box .selected i {
+            float: left;
+            display: inline-block;
+            height: 4px;
+            width: 9px;
+            background: url(../css/img/imgs.png);
+            background-position: -56px -228px;
+            margin-top: 15px; }
+          #box #header_mid .container .search .inner_box .selected ul {
+            position: absolute;
+            top: 34px;
+            z-index: 10;
+            width: 80px;
+            height: 80px; }
+        #box #header_mid .container .search .inner_box form {
+          height: 34px;
+          overflow: hidden;
+          display: inline-block; }
+          #box #header_mid .container .search .inner_box form #select {
+            width: 316px;
+            height: 34px;
+            margin-left: 2px; }
+          #box #header_mid .container .search .inner_box form #ss_sub {
+            height: 34px;
+            width: 100px;
+            background: #ff014a;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            color: white; }
+            #box #header_mid .container .search .inner_box form #ss_sub:hover {
+              cursor: pointer;
+              background: #ff006a; }
+        #box #header_mid .container .search .inner_box #hotwords {
+          /*搜索框下面商品名*/
+          height: 20px;
+          width: 100%;
+          z-index: 1; }
+          #box #header_mid .container .search .inner_box #hotwords ul li {
+            float: left;
+            font-size: 12px;
+            color: #646464;
+            margin-right: 12px; }
+            #box #header_mid .container .search .inner_box #hotwords ul li:hover {
+              color: #ff006a;
+              cursor: pointer;
+              text-decoration: underline; }
+          #box #header_mid .container .search .inner_box #hotwords ul .hot {
+            color: #ff4466; }
+    #box #header_mid .container .mid {
+      /*右边二维码*/
+      display: inline-block;
+      float: right;
+      width: 200px;
+      height: 90px; }
+      #box #header_mid .container .mid img {
+        height: 100%;
+        width: 100%; }
+  #box #footer {
+    /*底部栏*/
+    height: 200px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: content-box; }
+    #box #footer .container .footer_help {
+      width: 100%;
+      height: 100px;
+      border-bottom: 2px solid #FF5777; }
+      #box #footer .container .footer_help > div {
+        height: 100%;
+        width: 25%;
+        display: inline-block;
+        float: left; }
+        #box #footer .container .footer_help > div h4 {
+          text-align: center;
+          margin-top: 10px; }
+        #box #footer .container .footer_help > div ul {
+          width: 80%;
+          margin-left: 10%; }
+          #box #footer .container .footer_help > div ul li {
+            float: left;
+            width: 50%;
+            text-align: center;
+            font-size: 12px;
+            margin-top: 10px; }
+            #box #footer .container .footer_help > div ul li:hover {
+              color: #ff006a;
+              cursor: pointer; }
+    #box #footer .container .footer_info {
+      width: 100%;
+      height: 20px;
+      margin-top: 10px; }
+      #box #footer .container .footer_info ul li {
+        font-size: 12px;
+        margin-left: 30px;
+        color: #333;
+        float: left; }
+        #box #footer .container .footer_info ul li:hover {
+          cursor: pointer;
+          color: #ff006a; }
+      #box #footer .container .footer_info ul span {
+        margin-left: 30px;
+        font-size: 12px;
+        color: #646464;
+        float: left; }
+    #box #footer .container .footer_copyright {
+      width: 100%;
+      height: 52px;
+      margin-top: 10px; }
+      #box #footer .container .footer_copyright P {
+        font-size: 12px;
+        color: #646464;
+        margin-top: 5px;
+        margin-left: 30px; }
+
+/*# sourceMappingURL=common.css.map */

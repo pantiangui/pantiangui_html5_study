@@ -1,0 +1,322 @@
+
+$all:100%;
+$maincolor:#ff006a;
+
+
+#box{
+    background: white;
+    #cart_nav{/**/
+        height: 73px;
+        width: $all;
+        border-bottom: 1px solid #ddd;
+        background: #F2F2F2;
+        .container{
+            .logos{
+                display: inline-block;
+                float: left;    
+                height: 60px;
+                width: 200px;
+                background: url(../css/img/imgs.png) no-repeat;
+                background-position: -1px 0;
+            }
+            .cart_navs{
+                height: 72px;
+                width: 535px;
+                display: inline-block;
+                float: right;
+                >img{
+                    height: 72px;
+                    width: 535px;
+                }
+            }
+        }
+    }
+    
+    
+    #cart_main{
+        .container{
+            .cart_wrap{
+            
+                .cart_slide{/*头部*/
+                   margin-top: 30px;
+                    height: 38px;
+                    width: $all;
+                    line-height: 38px;
+                    >li{
+                        float: left;
+                        padding: 0 20px;
+                        font-size: 20px;
+                        >a{
+                            display: inline-block;
+                            height: 38px;
+                            padding: 0 5px;
+                            color: #333;
+                            border-bottom: 3px solid white;
+                            >span{
+                                margin-left: 5px;
+                                
+                            }
+                        }
+                        .allgoods{
+                            color: #f57;
+                            border-bottom: 3px solid #f57;
+                        }
+                    }
+                }
+                //表格
+                table{
+                    width: $all;
+                    //表头
+                    thead{
+                        font-size: 13px;
+                        color: #333;
+                        >tr{
+                            height: 48px;
+                            line-height: 48px;
+                            background: #F6F6F6;
+                            border: 1px solid #e5e5e5;
+                            font-weight: normal;
+                            >th{
+                                font-weight: normal;
+                            }
+                            .ckeck_wraps{/*全选*/
+                                width: 90px;
+                                font-weight: normal;
+                                >input{
+                                    cursor: pointer;
+                                }
+                                label{
+                                    margin-left: 5px;
+                                }
+                            }
+                            .goods_wraps{/*商品名*/
+                                width: 612px;
+                            }
+                            .goodsinfo_wraps{/*商品信息*/
+                                width: 140px;
+                            }
+                            .goodsprice_wraps{/*单价*/
+                                width: 76px;
+                            }
+                            .goodsnum_wraps{/*数量*/
+                                width: 100px;
+                            }
+                            .goodssum_wraps{/*小计*/
+                                width: 100px;
+                            }
+                            .goodsctrl_wraps{/*操作*/
+                                width: 80px;
+                            }
+                        }
+                    }
+                    
+                    
+                    //表体
+                    tbody{
+                        #aaa{
+                            background: yellow;
+                        }
+                        .shoptit{/*店铺名*/
+                            font-size: 12px;
+                            >td{    
+                                font-weight: bold;
+                                box-sizing: content-box;
+                                padding: 24px 10px 16px 24px;
+                                >input{
+                                    cursor: pointer;
+                                    display: none;
+                                }
+                                >a{
+                                    &:hover{
+                                         cursor: pointer;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                        //内容
+                        .cart_item{/*内容*/
+                           border: 1px solid #e5e5e5;
+                           .ckeck_wrap{/*选框*/
+                               padding-left: 26px;
+                               >input{
+                                   cursor: pointer;
+                               }
+                           }
+                           
+                            .goods_wrap{/*图片及标题*/
+                                box-sizing: content-box;
+                                padding: 15px 0 15px 0;
+                                >*{
+                                    float: left;
+                                }
+                                .goods_img{
+                                    height: 80px;
+                                    cursor: pointer;
+                                    display: inline-block;
+                                    width: 80px;
+                                    border: 1px double #CCCCCC;
+                                    img{
+                                        width: 78px;
+                                        height: 78px;
+                                    }
+                                }
+                                .goods_title{
+                                    cursor: pointer;
+                                    display: inline-block;
+                                    width: 480px;
+                                    margin-left: 20px;
+                                    font-size: 14px;
+                                    color: #333333;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                            .goodsinfo_wrap{/*商品信息*/
+                                >p{
+                                    font-size: 12px;
+                                    color: #666666;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            .goodsprice_wrap{/*价格*/
+                                del{
+                                    display: inline-block;
+                                    margin-bottom: 10px;
+                                    color: #999999;
+                                    font-size: 12px;
+                                }
+                                p{
+                                    margin-bottom: 10px;
+                                    font-size: 14px;
+                                    color: #666666;
+                                    font-weight: 700;
+                                }
+                            }
+                            .goodsnum_wrap{/*数量*/
+                                >div{
+                                    display: inline-block;
+                                    width: 106px;
+                                    height: 28px;
+                                    font-size: 0;
+                                    >*{
+                                        float: left;
+                                        border: none;
+                                        border: 1px solid #CCCCCC;
+                                        background: none;
+                                    }
+                                    .goods_num_red,.goods_num_add{
+                                        text-align: center;
+                                        height: 28px;
+                                        width: 28px;
+                                        font-size: 25px;
+                                        color: #999999;
+                                        line-height: 24px;
+                                        cursor: pointer;
+                                    }
+                                    .goods_num{
+                                        height: 28px;
+                                        width: 50px;
+                                        font-size: 16px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                            .goodssum_wrap{/*小计*/
+                                text-align: center;
+                                >p{
+                                    font-weight: bold;
+                                    color: #ff5777;
+                                }
+                            }
+                            .goodsctrl_del{/*删除*/
+                                font-size: 12px;
+                                color: #333;
+                                text-align: center;
+                                >a:hover{
+                                    cursor: pointer;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            
+                .cart_paybar{/*底部操作栏*/
+                    height: 52px;
+                    width: $all;
+                    margin-top: 20px;
+                    border: 1px solid #e5e5e5;
+                    font-size: 12px;
+                    color: #333333;
+                    line-height: 50px;
+                    ._vmbox{
+                        float: left;
+                        height: 50px;
+                        width: 500px;
+                        #all_checks{
+                            margin-left: 28px;
+                            cursor: pointer;
+                        }
+                        >label{
+                            margin-left: 5px;
+                        }
+                        >a{
+                            margin-left: 30px;
+                            &:hover{
+                                cursor: pointer;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    ._info{
+                        float: right;
+                        height: 50px;
+                        width: 430px;
+                        ._info_deep{
+                            float: left;
+                            display: inline-block;
+                            >span{
+                                color: #ff5777;
+                            }
+                            .total{
+                                font-size: 24px;
+                                font-weight: bold;
+                            }
+                        }
+                        >a{
+                            float: right;
+                            display: inline-block;
+                            height: 50px;
+                            width: 152px;
+                            background: #d8d8d8;
+                            font-size: 24px;
+                            color: white;
+                            text-align: center;
+                            cursor: pointer;
+                            &:hover{
+                                opacity: 0.8;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
